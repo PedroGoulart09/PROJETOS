@@ -85,11 +85,6 @@ label{
 	width: 100%;
 }
 
-.campo-medio{
-	display: inline-block;
-	padding-right: .5em;
-}
-
 .grupo{
 	width: 32%;
 	display: inline-block;
@@ -135,4 +130,23 @@ button[disabled=disabled], button:disabled {
 
 .paciente-invalido{
 	background-color: lightcoral;
+}
+
+#mensagem-erro{
+	color: red;
+}
+
+.fadeOut{
+	opacity: 0;
+	transition: 0,5;
+}
+
+#filtrar-tabela{
+	width: 200px;
+	height: 35px;
+	margin-bottom:10px;
+}
+
+.invisivel{
+	display:none;
 }
