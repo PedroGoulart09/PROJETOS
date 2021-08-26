@@ -16,10 +16,8 @@ botaoAdicionar.addEventListener('click', function(){
                 adicionaPacienteNaTabela(paciente);
             });
         }else{
-            console.log(xhr.status);
-            console.log(xhr.responseText);
            
-            erroAjax.classList.remove('invisivel');
+           erroAjax.classList.remove('invisivel');
 
         }
 

@@ -64,7 +64,7 @@
   function montaTr(paciente){
 
     var pacienteTr = document.createElement("tr");
-    pacienteTr.classList.add(".paciente")
+    pacienteTr.classList.add("paciente")
 
   pacienteTr.appendChild(montaTd(paciente.nome, 'info-nome'));
   pacienteTr.appendChild(montaTd(paciente.peso, 'info-peso'));
@@ -76,10 +76,10 @@
   return pacienteTr;
   }
 
-  function montaTd(dado){
+  function montaTd(dado, classe){
     var td = document.createElement('td');
     td.textContent = dado;
-    td.classList.add('classe')
+    td.classList.add(classe)
 
     return td;
   }
