@@ -2,10 +2,41 @@
   display: flex;
 }
 
+.conteudo-principal{
+  flex-grow: 3;
+}
+
 :root {
   --primaria: #58a4b0;
   --secundaria: #373f51;
   --secundaria-ativa: #cccccc;
   --fundo: #ffffff;
   --fundo-detalhes: #ececec;
+}
+.lista-categorias-all{
+  padding: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+
+  .lista-categorias{
+    display: flex;
+    justify-content: space-between;
+    width:700px;
+    
+  }
+  .lista-categorias li {
+    width: auto;
+    height: 20px;
+    background-color: #110f4a;
+    color: #fff;
+    padding: 5px 15px 5px 15px;
+    letter-spacing: 2px;
+    border-radius: 20px;
+    
+  }
+
+.input{
+  
+  
 }

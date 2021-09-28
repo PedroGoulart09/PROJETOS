@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import ListaDeNotas from "./components/ListaDeNotas";
 import FormularioCadastro from "./components/FormularioCadastro";
+import ListaDeCategorias from './components/ListaDeCategorias'
 import "./assets/App.css";
 import './assets/index.css';
 class App extends Component {
@@ -27,16 +28,21 @@ class App extends Component {
     let novoArray = this.state.notas
     novoArray.splice(index,1)
     this.setState({notas: novoArray});
-    console.log('deletar')
+    
   }
   
   render() {
     return (
       <section className="conteudo">
         <FormularioCadastro criarNota={this.criarNota.bind(this)}/>
+        <main className="conteudo-principal">
+             
+        <ListaDeCategorias/>
         <ListaDeNotas  
         apagarNotas={this.deletarNota.bind(this)}
         notas={this.state.notas}/>
+        </main>
+        
       </section>
     );
   }
